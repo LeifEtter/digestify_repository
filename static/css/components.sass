@@ -1,0 +1,53 @@
+$primary-purple: #B3A0CE
+$primary-grey: #464646
+$primary-white: #F1EEE9
+$primary-shadow: #575654
+$primary-edge: #000000
+$primary-font: 'Supermercado One', cursive
+$box-shadow-1: 5px 5px 0px 0px rgba(87, 86, 84, 1.0)
+$box-shadow-1: 8px 8px 0px 0px rgba(87, 86, 84, 1.0)
+$text-shadow-1: 3px 3px rgba(87, 86, 84, 1.0)
+$placeholder-color: rgba(0, 0, 0, 0.3)
+    
+.default-input
+    width: 250px
+    height: 50px
+    border: 1px solid black
+    box-shadow: $box-shadow-1
+    background-color: $primary-white
+    margin-bottom: 0px
+    font-family: $primary-font
+    font-size: 25px
+    padding-left: 20px
+    margin-top: 20px
+
+.default-input:focus
+    outline: none
+    transform: translate(5px, 5px)
+    box-shadow: none
+
+input[type=number]
+  -moz-appearance: textfield
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+  -webkit-appearance: none
+  margin: 0
+
+.default-button
+    font-family: $primary-font !important
+    font-size: 30px
+    width: 200px
+    height: 160px
+    border: 1px solid black
+    box-shadow: $box-shadow-1
+    background-color: $primary-purple
+    color: white
+
+.default-button:hover
+    transform: translate(8px, 8px)
+    box-shadow: none
+
+#submit-food
+    margin-top: 30px
+    width: 275px
+    height: 100px

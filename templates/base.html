@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/518213894d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/components.css') }}">
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <title>Food Assistant</title>
+    {% block head %}{% endblock head %}
+</head>
+<body>
+    <div class="top-bar">
+        <button class="navigate-button" onclick="{location.href = '/createMeal'}"><span>Create Meal</span></button>
+        <div id="flex-filler"></div>
+        <button class="navigate-button" style="margin-right: 30px;" onclick="{location.href = '/foods'}"><span>Foods</span></button>
+        <button class="navigate-button" id="register-button" onclick="{location.href = '/meals'}"><span>Meals</span></button>
+    </div>
+    {% block body %}{% endblock body %}
+</body>
+</html>

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock head %}
+
+{% block body %}
+<h1 class="default-title">Meals</h1>
+<div class="meals-wrapper">
+    {% for meal_item in meal_items %}
+
+<div class="display-meal-item">
+    <h1>{{ meal_item.name }}</h1>
+    <h2>Ingredients</h2>
+    {% for food_item in meal_item.ingredients %}
+    <div class="display-food-item">
+        <p style="font-size: 25px;">{{ food_item.name }}</p>
+        <p>Calories: {{ food_item.calories }}</p>
+        <div id="allergen-images">
+            {% for allergen in (food_item.allergens.split(" ")) %}
+            <img src="/static/assets/icons/{{ allergen }}.svg" alt="">
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
+</div>
+
+{% endblock body %}

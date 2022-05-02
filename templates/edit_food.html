@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock head %}
+
+{% block body %}
+<h1 class="default-title">Create Food Item</h1>
+<form id="create-food-form" action="/editFood/{{ food.id }}" method="POST">
+    <div id="input-field-container">
+        <input class="default-input" type="text" id="name" placeholder="name" name="name" value="{{ food.name }}" /><br />
+        <input class="default-input" type="number" id="calories" placeholder="calories/100g" name="calories" value="{{ food.calories }}" /><br />
+        <button class="default-button" type="submit" id="submit-food">Update Food Item</button><br />
+        <button class="default-button" onclick="{location.href='/deleteFood/{{ food.id }}'}"  id="submit-food" style="background-color: rgb(203, 117, 117);">Delete Food Item</button>
+    </div>
+    <div id="allergens-container">
+        <h1 class="smaller-title">Allergens</h1>
+        <div class="checkbox-container">
+            <div>
+                <input type="checkbox" id="check-lactose" name="check-allergen" value="lactose" {{ 'checked="checked" if lactose else ""' }}/>
+                <label for="check-lactose" class="check-label">Lactose</label>
+            </div>
+            <div>
+                <input type="checkbox" id="check-gluten" name="check-allergen" value="gluten" {{ 'checked="checked" if gluten else ""' }}/>
+                <label for="check-lactose" class="check-label">Gluten</label>
+            </div>
+            <div>
+                <input type="checkbox" id="check-nuts" name="check-allergen" value="nuts" {{ 'checked="checked" if nuts else ""' }}/>
+                <label for="check-lactose" class="check-label">Nuts</label>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock body %}

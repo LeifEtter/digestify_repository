@@ -1,0 +1,57 @@
+.default-input {
+  width: 250px;
+  height: 50px;
+  border: 1px solid black;
+  -webkit-box-shadow: 8px 8px 0px 0px #575654;
+          box-shadow: 8px 8px 0px 0px #575654;
+  background-color: #F1EEE9;
+  margin-bottom: 0px;
+  font-family: "Supermercado One", cursive;
+  font-size: 25px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.default-input:focus {
+  outline: none;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.default-button {
+  font-family: "Supermercado One", cursive !important;
+  font-size: 30px;
+  width: 200px;
+  height: 160px;
+  border: 1px solid black;
+  -webkit-box-shadow: 8px 8px 0px 0px #575654;
+          box-shadow: 8px 8px 0px 0px #575654;
+  background-color: #B3A0CE;
+  color: white;
+}
+
+.default-button:hover {
+  -webkit-transform: translate(8px, 8px);
+          transform: translate(8px, 8px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#submit-food {
+  margin-top: 30px;
+  width: 275px;
+  height: 100px;
+}
+/*# sourceMappingURL=components.css.map */

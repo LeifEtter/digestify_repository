@@ -1,0 +1,266 @@
+body {
+  margin-top: 0 !important;
+  padding: 0 !important;
+  background-color: #F1EEE9;
+  font-family: "Supermercado One", cursive !important;
+}
+
+.default-title {
+  text-align: center;
+  color: #464646 !important;
+  font-size: 50px;
+}
+
+.smaller-title {
+  color: #464646;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.foods-container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#create-food-form {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 80px;
+          column-gap: 80px;
+}
+
+#allergens-container input[type="checkbox"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #F1EEE9;
+  margin: 0;
+  font: inherit;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  -webkit-box-shadow: 2px 2px 0px 0px #575654;
+          box-shadow: 2px 2px 0px 0px #575654;
+  cursor: pointer;
+}
+
+#allergens-container input[type="checkbox"]:checked {
+  background-color: #B3A0CE;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+}
+
+.check-label {
+  font-size: 30px;
+  color: #464646;
+  margin-left: 10px;
+}
+
+.checkbox-container {
+  margin: 0 auto;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+#input-field-container {
+  margin-top: 20px;
+}
+
+.display-food-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  border: 1px solid black;
+  height: 175px;
+  width: 230px;
+  -webkit-box-shadow: 8px 8px 0px 0px #575654;
+          box-shadow: 8px 8px 0px 0px #575654;
+  font-size: 20px;
+  padding-top: 15px;
+  color: #464646 !important;
+}
+
+.display-food-item:hover {
+  -webkit-transform: translate(8px, 8px);
+          transform: translate(8px, 8px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#title {
+  font-size: 30px !important;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#food-grid {
+  margin: 0px 50px 0px 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (190px)[auto-fill];
+      grid-template-rows: repeat(auto-fill, 190px);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+#add-food {
+  width: 230px;
+  height: 190px;
+}
+
+.display-meal-item {
+  margin-left: 50px;
+  color: #464646 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  border: 1px solid black;
+  height: 500px;
+  width: 550px;
+  -webkit-box-shadow: 8px 8px 0px 0px #575654;
+          box-shadow: 8px 8px 0px 0px #575654;
+  padding-top: 20px;
+}
+
+.display-meal-item h1 {
+  font-size: 40px;
+}
+
+.display-meal-item h2 {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.display-meal-item .display-food-item {
+  border: 2px solid black;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.display-meal-item .display-food-item img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+#create-meal-button {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 300px;
+}
+
+#create-meal-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+#create-meal-form .food-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+#create-meal-form .food-list .foods-to-select {
+  font-size: 25px;
+  color: #464646;
+}
+
+#allergen-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#allergen-images img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.meals-wrapper {
+  margin: 0px 50px 0px 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (550px)[auto-fill];
+      grid-template-rows: repeat(auto-fill, 550px);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-bottom: 100px;
+}
+/*# sourceMappingURL=main.css.map */

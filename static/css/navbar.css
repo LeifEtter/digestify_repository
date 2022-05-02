@@ -1,0 +1,39 @@
+.top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 30px 0px 30px;
+  margin-bottom: 100px;
+}
+
+.top-bar span {
+  font-family: "Supermercado One", cursive !important;
+}
+
+.top-bar #flex-filler {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.top-bar #login-button {
+  margin-right: 20px;
+}
+
+.top-bar .navigate-button {
+  background-color: #F1EEE9;
+  border: 1px solid black;
+  padding: 15px 25px 15px 25px;
+  font-size: 35px;
+  color: #464646;
+  -webkit-box-shadow: 8px 8px 0px 0px #575654;
+          box-shadow: 8px 8px 0px 0px #575654;
+}
+
+.top-bar .navigate-button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+}
+/*# sourceMappingURL=navbar.css.map */

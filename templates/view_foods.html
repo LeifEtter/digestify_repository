@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock head %}
+
+{% block body %}
+<h1 class="default-title">Foods</h1>
+<div id="food-grid">
+    {% for food_item in food_items %}
+    <div class="display-food-item" onclick="{window.location='/editFood/{{ food_item.id }}'}">
+        <p id="title">{{ food_item.name }}</p>
+        <p>Calories: {{ food_item.calories }}</p>
+        <p style="margin-top: 20px;">Allergens:</p>
+        <div id="allergen-images">
+            {% for allergen in (food_item.allergens.split(" ")) %}
+            <img src="/static/assets/icons/{{ allergen }}.svg" alt="">
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+    <button class="default-button" id="add-food" onclick="location.href='/createFood'">Add Food</button>
+</div>
+{% endblock body %}

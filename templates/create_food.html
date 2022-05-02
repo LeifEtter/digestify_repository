@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock head %}
+
+{% block body %}
+<h1 class="default-title">Create Food Item</h1>
+<form id="create-food-form" action="/createFood" method="POST">
+    <div id="input-field-container">
+        <input class="default-input" type="text" id="name" placeholder="name" name="name" /><br />
+        <input class="default-input" type="number" id="calories" placeholder="calories/100g" name="calories" /><br />
+        <button class="default-button" type="submit" id="submit-food">Add Food Item</button>
+    </div>
+    <div id="allergens-container">
+        <h1 class="smaller-title">Allergens</h1>
+        <div class="checkbox-container">
+            <div>
+                <input type="checkbox" id="check-lactose" name="check-allergen" value="lactose"/>
+                <label for="check-lactose" class="check-label">Lactose</label>
+            </div>
+            <div>
+                <input type="checkbox" id="check-gluten" name="check-allergen" value="gluten" />
+                <label for="check-lactose" class="check-label">Gluten</label>
+            </div>
+            <div>
+                <input type="checkbox" id="check-nuts" name="check-allergen" value="nuts" />
+                <label for="check-lactose" class="check-label">Fish</label>
+            </div>
+        </div>
+    </div>
+    
+    
+</form>
+{% endblock body %}

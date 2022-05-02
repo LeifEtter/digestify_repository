@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock head %}
+
+{% block body %}
+<form action="/createMeal" method="POST" id="create-meal-form">
+<input type="text" name="name" id="name" class="default-input" placeholder="Meal Name"><br />
+<h1 class="smaller-title">Ingredients</h1>
+<div class="food-list">
+{% for food_item in food_items %}
+<div class="foods-to-select">
+    <input type="checkbox" name="selected-food" value="{{ food_item.id }}"></input>
+    {{ food_item.name }}
+</div>
+{% endfor %}
+</div>
+<button type="submit" class="default-button" style="width: 280px; height: 50px; margin-top: 50px">Add Meal</button>
+</form>
+
+{% endblock body %}
