@@ -1,0 +1,11 @@
+{
+  "files.exclude": {
+    ".vscode": true,
+    "static/css/main.css.map": true,
+    "static/css/main.css": true,
+    "static/css/navbar.css": true,
+    "static/css/navbar.css.map": true,
+    "static/css/components.css.map": true,
+    "static/css/components.css": true
+  }
+}
